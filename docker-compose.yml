@@ -67,8 +67,8 @@ services:
       - 18084:18084   # Dashboard HTTPS
       - 1883:1883     # MQTT TCP
       - 8883:8883     # MQTT TLS
-      - 8085:8083     # ← WebSocket (HOST 8085 → CONT 8083)
-      - 8086:8084     # ← WebSocket TLS (HOST 8086 → CONT 8084)
+      - 8073:8083     # ← WebSocket (HOST 8085 → CONT 8083)
+      - 8074:8084     # ← WebSocket TLS (HOST 8086 → CONT 8084)
       - 8091:8081     # Mgmt HTTP (opcional)
       - 8092:8082     # Mgmt HTTPS (opcional)
 
@@ -145,4 +145,5 @@ services:
       iot:
         aliases:
           - emqx_host
+
 
